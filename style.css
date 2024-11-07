@@ -1,0 +1,113 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .weather-app {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    transition: background 0.5s ease-in-out;
+    text-shadow: 2px 2px black;
+  }
+  
+  h1 {
+    font-weight: 700;
+  }
+  
+  .search-box {
+    margin-bottom: 1em;
+  }
+  
+  input[type="text"] {
+    padding: 0.5em;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    width: 200px;
+    background: palevioletred;
+    color: black;
+  }
+  
+  button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: palevioletred;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid palevioletred;
+  }
+  
+  .weather-info h2 {
+    font-size: 1.5em;
+  }
+  
+  .weather-info p {
+    margin: 0.5em 0;
+  }
+  #city-name{
+    color: palevioletred;
+  }
+
+  #weather-icon {
+    font-size: 3em;
+    margin-top: 1em;
+    animation: float 2s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+
+  @media (max-width: 480px) {
+    .weather-app {
+      width: 90%;
+    }
+  }
+  
+
+
+
+  .clear-day {
+    background: url('images/Clear-day\ \(2\).avif') no-repeat center center/cover;
+  }
+  
+  .clear-night {
+    background: url('images/clear-night.jpg') no-repeat center center/cover;
+  }
+  
+  .cloudy {
+    background: url('images/cloudy1.avif') no-repeat center center/cover;
+  }
+  
+  .rainy {
+    background: url('images/rainy.jpg') no-repeat center center/cover;
+  }
+  
+  .snowy {
+    background: url('images/snowy.webp') no-repeat center center/cover;
+  }
+  
+  .misty {
+    background: url('images/misty1.jpg') no-repeat center center/cover;
+  }
+  
+
+  .weather-app {
+    transition: background 0.5s ease-in-out;
+  }
+  
